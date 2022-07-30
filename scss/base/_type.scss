@@ -1,0 +1,99 @@
+// container
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+// font
+.text-center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.lh-h3 {
+    line-height: $lh-h3;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+// color
+.bg-black {
+    background: #000;
+}
+
+// space
+@for $i from 1 through 17 {
+    .mb-#{$i} {
+        margin-bottom: $space*$i;
+    }
+}
+
+.mb-36 {
+    margin-bottom: $space*36;
+}
+
+.mr-6 {
+    margin-right: $space*6;
+}
+
+.m-a {
+    margin: auto;
+}
+
+// padding
+.pt-14 {
+    padding-top: $space*14;
+}
+
+.pb-40 {
+    padding-bottom: $space*40;
+}
+
+.py-16 {
+    padding: $space*16 0;
+}
+
+// flex
+.d-flex {
+    display: flex;
+}
+
+.fx-between {
+    justify-content: space-between;
+}
+
+.fx-center {
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// line-bottom
+.line-bottom::after {
+    content: '';
+    width: 384px;
+    height: 24px;
+    display: block;
+    border-bottom: 1px solid #000;
+    margin: 0 auto;
+}
+
+// dot
+.dot::before {
+    content: '';
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    border-radius: 50%;
+    background: $c-accent;
+    position: relative;
+    top: 2px;
+    right: 16px;
+}

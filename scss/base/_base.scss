@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+    font-size: $fz-base;
+    line-height: 1.5;
+    font-weight: $fw-medium;
+    font-style: italic;
+    // 滾輪!
+    &::-webkit-scrollbar {
+        width: 5px;
+
+        &-thumb {
+            background: $c-accent;
+            border-radius: 5px;
+        }
+    }
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}

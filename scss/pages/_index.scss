@@ -1,0 +1,49 @@
+// header
+header {
+    height: 100vh;
+    background: center/cover url(../img/background.png);
+    font-weight: $fw-bold;
+}
+
+h1 {
+    font-size: $fz-h1;
+    line-height: $lh-h1;
+    font-weight: $fw-black;
+
+    .h1-sup {
+        display: block;
+        font-size: $fz-base;
+        line-height: $lh-h3;
+        font-weight: $fw-bold;
+    }
+}
+
+// all
+.title {
+    font-size: $fz-h2;
+    line-height: $lh-h2;
+    font-weight: $fw-medium;
+}
+
+.text {
+    font-size: $fz-sm;
+    font-style: normal;
+}
+
+// about
+.about {
+    font-weight: $fw-bold;
+
+    &-img {
+        width: 384px;
+    }
+}
+
+// contact
+.contact:hover {
+    color: $c-accent;
+
+    .contact-link {
+        color: $c-accent;
+    }
+}
