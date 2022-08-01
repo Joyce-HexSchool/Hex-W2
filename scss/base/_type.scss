@@ -41,10 +41,6 @@
     margin-right: $space*6;
 }
 
-.m-a {
-    margin: auto;
-}
-
 // padding
 .pt-14 {
     padding-top: $space*14;
@@ -74,15 +70,8 @@
 .flex-wrap {
     flex-wrap: wrap;
 }
-
-// line-bottom
-.line-bottom::after {
-    content: '';
-    width: 384px;
-    height: 24px;
-    display: block;
-    border-bottom: 1px solid #000;
-    margin: 0 auto;
+.fy-center{
+    align-items: center;
 }
 
 // dot
@@ -93,7 +82,6 @@
     display: inline-block;
     border-radius: 50%;
     background: $c-accent;
-    position: relative;
-    top: 2px;
-    right: 16px;
+    margin-top: 2px;
+    margin-right: 16px;
 }
