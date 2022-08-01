@@ -37,12 +37,11 @@ h1 {
     &-img {
         width: 384px;
     }
-    &-list{
+
+    &-list {
         width: 384px;
-        border-bottom: 1px solid #000;
-        margin-right: auto;
-        margin-left: auto;
-        white-space: nowrap;
+        border-top: 1px solid #000;
+        margin: 0 auto;
     }
 }
 

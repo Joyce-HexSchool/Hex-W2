@@ -91,7 +91,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  width: 1200px;
   margin: 0 auto;
 }
 
@@ -191,6 +191,10 @@ img {
   margin-right: 24px;
 }
 
+.pt-7 {
+  padding-top: 28px;
+}
+
 .pt-14 {
   padding-top: 56px;
 }
@@ -271,10 +275,8 @@ h1 .h1-sup {
 }
 .about-list {
   width: 384px;
-  border-bottom: 1px solid #000;
-  margin-right: auto;
-  margin-left: auto;
-  white-space: nowrap;
+  border-top: 1px solid #000;
+  margin: 0 auto;
 }
 
 .contact:hover {
