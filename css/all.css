@@ -284,4 +284,9 @@ h1 .h1-sup {
 }
 .contact:hover .contact-link {
   color: #891818;
+}
+
+.item:hover {
+  opacity: 0.8;
+  color: #891818;
 }/*# sourceMappingURL=all.css.map */

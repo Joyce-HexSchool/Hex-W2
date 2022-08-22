@@ -53,3 +53,8 @@ h1 {
         color: $c-accent;
     }
 }
+
+.item:hover {
+    opacity: 0.8;
+    color: $c-accent;
+}

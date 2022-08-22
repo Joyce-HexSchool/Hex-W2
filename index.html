@@ -13,12 +13,16 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="W2-主線任務 個人網頁">
     <meta property="og:description" content="六角切版直播班 : 第二週主線任務-個人網頁">
+    <!-- animate.css 動畫效果 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- AOS 動畫效果 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/all.css">
 </head>
 
 <body>
     <header class="text-white d-flex fx-center fy-center mb-14">
-        <div>
+        <div class="animate__animated animate__bounceIn">
             <h1 class="mb-8"><span class="h1-sup">Here’s</span>JOANNE</h1>
             <p class="mb-10">Founder of “XXXD Official’’<br>& Graphic Designer</p>
             <ul class="d-flex fx-between">
@@ -32,7 +36,7 @@
     <main class="text-center">
         <section class="about container mb-14">
             <h2 class="title mb-10">About</h2>
-            <img class="about-img mb-5" src="./img/my-photo.png" alt="photo">
+            <img class="about-img mb-5" src="./img/my-photo.png" alt="photo" data-aos="fade-up">
             <ul class="mb-6">
                 <li class="lh-h3 mb-1">
                     <h3>Joanne Chen</h3>
@@ -53,9 +57,9 @@
                 <p class="text mb-17"><span class="font-italic">2020</span>
                     年創立的個人服飾品牌<br>引領叛逆少年開啟與社會對話的窗口<br>主打概念潮流<span class="font-italic">T-shirt</span></p>
                 <ul class="d-flex fx-center flex-wrap">
-                    <li class="mb-10"><img src="./img/brand-01.png" alt="brand-img1"></li>
-                    <li class="mr-6"><img src="./img/brand-02.png" alt="brand-img2"></li>
-                    <li><img src="./img/brand-03.png" alt="brand-img3"></li>
+                    <li class="item mb-10"><img src="./img/brand-01.png" alt="brand-img1" data-aos="flip-left"></li>
+                    <li class="item mr-6"><img src="./img/brand-02.png" alt="brand-img2" data-aos="flip-left"></li>
+                    <li class="item"><img src="./img/brand-03.png" alt="brand-img3" data-aos="flip-left"></li>
                 </ul>
             </div>
         </section>
@@ -64,33 +68,34 @@
             <p class="text mb-14"><span class="font-italic">2016-2020</span> 年累積的作品<br>海報/廣告/攝影/<span
                     class="font-italic">LOGO</span>/<span class="font-italic">3D</span></p>
             <ul class="d-flex fx-between lh-h3 mb-12">
-                <li><img class="mb-4" src="./img/poster-01.png" alt="poster-img1">
+                <li class="item"><img class="mb-4" src="./img/poster-01.png" alt="poster-img1" data-aos="zoom-in">
                     <h3 class="text">海報設計/<span class="font-italic">2017</span></h3>
                 </li>
-                <li><img class="mb-4" src="./img/poster-02.png" alt="poster-img2">
+                <li class="item"><img class="mb-4" src="./img/poster-02.png" alt="poster-img2" data-aos="zoom-in">
                     <h3 class="text">海報設計/<span class="font-italic">2018</span></h3>
                 </li>
-                <li><img class="mb-4" src="./img/poster-03.png" alt="poster-img3">
+                <li class="item"><img class="mb-4" src="./img/poster-03.png" alt="poster-img3" data-aos="zoom-in">
                     <h3 class="text">海報設計/<span class="font-italic">2018</span></h3>
                 </li>
             </ul>
             <ul class="d-flex fx-between lh-h3 mb-12">
-                <li><img class="mb-4" src="./img/photo-01.png" alt="photo-img1">
+                <li class="item"><img class="mb-4" src="./img/photo-01.png" alt="photo-img1" data-aos="zoom-in"
+                        data-aos-anchor-placement="top-center">
                     <h3 class="text">概念攝影/<span class="font-italic">2018</span></h3>
                 </li>
-                <li><img class="mb-4" src="./img/photo-02.png" alt="photo-img2">
+                <li class="item"><img class="mb-4" src="./img/photo-02.png" alt="photo-img2" data-aos="zoom-in">
                     <h3 class="text">概念攝影/<span class="font-italic">2018</span></h3>
                 </li>
             </ul>
             <ul class="d-flex lh-h3 fx-between">
-                <li><img class="mb-4" src="./img/photo-03.png" alt="photo-img3">
+                <li class="item"><img class="mb-4" src="./img/photo-03.png" alt="photo-img3" data-aos="zoom-in">
                     <h3 class="text">sasa 酒標設計/<span class="font-italic">2019</span>
                     </h3>
                 </li>
-                <li><img class="mb-4" src="./img/photo-04.png" alt="photo-img4">
+                <li class="item"><img class="mb-4" src="./img/photo-04.png" alt="photo-img4" data-aos="zoom-in">
                     <h3 class="text">攝影創作/<span class="font-italic">2018</span></h3>
                 </li>
-                <li><img class="mb-4" src="./img/photo-05.png" alt="photo-img5">
+                <li class="item"><img class="mb-4" src="./img/photo-05.png" alt="photo-img5" data-aos="zoom-in">
                     <h3 class="text">官網設計/<span class="font-italic">2020</span></h3>
                 </li>
             </ul>
@@ -105,6 +110,16 @@
             </li>
         </ul>
     </footer>
+
+
+
+    <!-- AOS 動畫效果 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            anchorPlacement: 'bottom-bottom',
+        });
+    </script>
 </body>
 
 </html>
